@@ -1,0 +1,3 @@
+project(algorithms)
+
+add_executable(binary_search binary_search/binary_search.c)

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/adam/Documents/projects/my_cs_degree/build/algorithms",
+  "command": "/usr/bin/clang   -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/binary_search.dir/binary_search/binary_search.c.o -c /Users/adam/Documents/projects/my_cs_degree/algorithms/binary_search/binary_search.c",
+  "file": "/Users/adam/Documents/projects/my_cs_degree/algorithms/binary_search/binary_search.c"
+}
+]
