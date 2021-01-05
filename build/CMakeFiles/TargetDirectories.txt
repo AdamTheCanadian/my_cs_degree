@@ -1,5 +1,0 @@
-/Users/adam/Documents/projects/my_cs_degree/build/CMakeFiles/rebuild_cache.dir
-/Users/adam/Documents/projects/my_cs_degree/build/CMakeFiles/edit_cache.dir
-/Users/adam/Documents/projects/my_cs_degree/build/algorithms/CMakeFiles/rebuild_cache.dir
-/Users/adam/Documents/projects/my_cs_degree/build/algorithms/CMakeFiles/edit_cache.dir
-/Users/adam/Documents/projects/my_cs_degree/build/algorithms/CMakeFiles/binary_search.dir
