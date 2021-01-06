@@ -12,23 +12,25 @@ int binary_search(int* arr, uint64_t n, uint64_t searchNum, uint64_t* idx, uint6
   uint64_t high = n - 1;
   *steps = 0;
   uint64_t cnt = 0;
+  /* Get the middle index */
+  uint64_t mid = low + (high - 1) / 2;
   while (low <= high) {
-    /* Get the middle index */
-    uint64_t mid = low + (high - 1) / 2;
     /* Get the value at the middle index */
     uint64_t guess = arr[mid];
+    printf("low: %lld   mid: %lld   high: %lld\n", low, mid, high);
     cnt += 1;
     if (guess == searchNum) {
       *idx = mid;
       printf("cnt %lld\n", cnt);
       return 1;
     }
-    if (guess > searchNum) {
-      high = mid - 1;
-    }
-    else {
+    if (guess < searchNum) {
       low = mid + 1;
     }
+    else {
+      high = mid - 1;
+    }
+    mid = (low + high) / 2;
   }
   return 0;
 }
