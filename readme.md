@@ -27,3 +27,11 @@ My 2021 goal of learning as much of the CS fundamentals as possible. Not having 
     - Selection sort
   - O(n!)
     - Traveling salesman problem
+
+### Recursion
+
+- Recursive functions contain two parts:
+  - Recursive case:
+    - Part where the function calls itself
+  - Base case:
+    - Part where the function returns, conditions checks, etc.
