@@ -45,10 +45,12 @@ int main(int argc, char* argv[]) {
   }
   /* Convert input arguments into integers */
   char* s;;
-  uint64_t n = strtol(argv[1], &s, 10);
+  long long n;
+  sscanf(argv[1], "%lld", &n);
   int arr[n];
   s = argv[2];
-  uint64_t desired_num = strtol(s, NULL, 10);
+  long long desired_num;
+  sscanf(argv[2], "%lld", &desired_num);
   printf("Searching for %lld in an array of size %lld\n", desired_num, n);
   /* Initialize array */
   for (int i = 0; i < n; i++) {
