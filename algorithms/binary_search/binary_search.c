@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdint.h>
+#include <errno.h>
 
 /* Searches for searchNum in an array arr of size n.
   Returns 0 if unable to find it, 1 otherwise.
@@ -43,11 +44,11 @@ int main(int argc, char* argv[]) {
     return 0;
   }
   /* Convert input arguments into integers */
-  char* s = argv[1];
-  uint64_t n = atoll(s);
+  char* s;;
+  uint64_t n = strtol(argv[1], &s, 10);
   int arr[n];
   s = argv[2];
-  uint64_t desired_num = atoll(s);
+  uint64_t desired_num = strtol(s, NULL, 10);
   printf("Searching for %lld in an array of size %lld\n", desired_num, n);
   /* Initialize array */
   for (int i = 0; i < n; i++) {
