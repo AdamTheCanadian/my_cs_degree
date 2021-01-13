@@ -35,3 +35,11 @@ My 2021 goal of learning as much of the CS fundamentals as possible. Not having 
     - Part where the function calls itself
   - Base case:
     - Part where the function returns, conditions checks, etc.
+
+## Data Structures
+
+### Hash Table
+
+- Load factor:
+  - Number of elements in the hash table divided by the number of available slots
+    - 1 element in a table that can hold 3 elements has a load of 1/3
