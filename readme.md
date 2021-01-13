@@ -43,3 +43,6 @@ My 2021 goal of learning as much of the CS fundamentals as possible. Not having 
 - Load factor:
   - Number of elements in the hash table divided by the number of available slots
     - 1 element in a table that can hold 3 elements has a load of 1/3
+  - If the load factor goes up the chance of collisions goes up
+    - Slower -> bad
+  - If load approaches 0.7 good idea to resize
