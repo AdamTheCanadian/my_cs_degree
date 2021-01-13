@@ -105,9 +105,12 @@ char* search_hash_table(struct HashTable* ht, char* k) {
   struct HashItem* item = ht->items[index];
   int i = 0;
   while (item != NULL) {
+    if (strcmp(item->key, k) == 0) {
+      return item->value;
+    }
     int index = hash(k, ht->size, i);
     item = ht->items[index];
     i += 1;
   }
-  return item->value;
+  return NULL;
 }
