@@ -46,3 +46,15 @@ My 2021 goal of learning as much of the CS fundamentals as possible. Not having 
   - If the load factor goes up the chance of collisions goes up
     - Slower -> bad
   - If load approaches 0.7 good idea to resize
+
+## Breadth First Search / Dijkstra (TODO)
+
+Need to implement examples and solutions for these two, studied them but need to find easy examples
+
+## Greedy Algorithms
+
+- At each step you pick the locally optimal solution
+  - Stealing three items from a store, can only fit N pounds
+    - Find the most expensive item that fits
+    - Find the next most expensive item that fits
+    - Repeat
