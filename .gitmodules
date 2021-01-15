@@ -1,0 +1,3 @@
+[submodule "EPIJudge"]
+	path = EPIJudge
+	url = git@github.com:AdamTheCanadian/EPIJudge.git
