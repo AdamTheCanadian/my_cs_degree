@@ -1,3 +1,6 @@
 [submodule "EPIJudge"]
 	path = EPIJudge
 	url = git@github.com:AdamTheCanadian/EPIJudge.git
+[submodule "epi_judge"]
+	path = epi_judge
+	url = git@github.com:AdamTheCanadian/epi_judge.git
