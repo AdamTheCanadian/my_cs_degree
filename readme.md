@@ -2,6 +2,8 @@
 
 My 2021 goal of learning as much of the CS fundamentals as possible. Not having a formal CS degree but having >5 years experience wanted to test my knowledge, fill in any gaps, and learn something new along the way.
 
+** Jan 23, 2021 **
+Starting LeetCode challenges
 ## Algorithms
 
 - Linear time:
