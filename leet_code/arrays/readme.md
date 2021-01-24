@@ -16,3 +16,6 @@
 - No new space is allocated, traverse each array once
   - O(n + m)
 
+## Erasing duplicates
+- We can start at index 1 since the first element will always be valid
+- If we iterate through the array, comparing the current element to the last element written, if its the same, keep going. If its different write this new value
