@@ -50,3 +50,23 @@
 - If the element at the front pointer is not even (mod 2), swap it with the back pointer and decrement back pointer (cause the element is now correct, its odd, and in the back of the array)
   - This brings potentially an odd number to the front (cause we swapped front and back pointers, back could have been odd).
   - However since we havent changed the front pointer, the next iteration will check this newly swapped value.
+
+## Max Consecutive Ones II
+- Double loop
+  - O(n^2) 
+- Start first loop (i) at first index (0)
+  - Start second loop (j) at first index (so 0 in this case)
+    - Keep incrementing a count variable until we have encountered two 0's
+    - So if arr[j] is not 0 add one to count, UNLESS the number of zeros encountered is 2
+      - So need to keep a record of how many zeros we have seen
+  - If the current count > max found so far update max
+- First loop is now 1, second loop starts at 1, repeat
+- Test cases failed on:
+  - [0, 0]. Should be an answer of 1
+  - Apparently timeout on a long sequence....
+    - 244 ms
+- Ended up going with the double pointer.
+  - Pointers start at same location
+  - Move one pointer forward until you hit two zeros in a row
+    - Once this happens bring the other pointer up until no more two zeros
+  - Keep a record of the max, and then the current sequence is the length/gap of the two pointers (+1)
