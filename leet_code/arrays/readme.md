@@ -32,3 +32,12 @@
   - Search the map if:
     - arr[i] * 2 exists (the double value)
     - arr[i] / 2 exists (the half value), and arr[i] % 2 to avoid fractional division
+
+## Move Zeroes
+- Create pointer to maintain the next location to be written to
+- If we find a non zero, write it to the next write location, and increment write location
+- This will require two-ish passes, once to move all the elements, and then to go from write index to the end setting everything to 0
+- 2nd approach
+  - If we write the non zero element to the write index
+  - Set the index of the non zero element to 0 at the same time
+    - ** only if i != write index **
