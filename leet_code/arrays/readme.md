@@ -41,3 +41,12 @@
   - If we write the non zero element to the write index
   - Set the index of the non zero element to 0 at the same time
     - ** only if i != write index **
+
+## Sort Array By Parity
+- Use two pointers, 
+  - one starting at the front moving towards the back 
+  - one at the back moving towards the front
+- Will keep iterating until the two pointers cross over each other
+- If the element at the front pointer is not even (mod 2), swap it with the back pointer and decrement back pointer (cause the element is now correct, its odd, and in the back of the array)
+  - This brings potentially an odd number to the front (cause we swapped front and back pointers, back could have been odd).
+  - However since we havent changed the front pointer, the next iteration will check this newly swapped value.
