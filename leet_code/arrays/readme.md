@@ -70,3 +70,7 @@
   - Move one pointer forward until you hit two zeros in a row
     - Once this happens bring the other pointer up until no more two zeros
   - Keep a record of the max, and then the current sequence is the length/gap of the two pointers (+1)
+
+## Third maximum number
+- This one kicked my butt. 
+- Ended up using a set, and taking advantage of the fact that the set is ordered/sorted but it seems to be cheating.
