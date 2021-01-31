@@ -7,7 +7,7 @@ Answers to random leet code challenges that were done a) not part of a block, or
 - Find the shortest distance of two words (word1 and word2) in an array of words
 - Double loop so O(n^2)
 - Since word1 and word2 could appear more than once in words we need to keep a record of the shortest distance found
-
+- Could do a single pass by keeping a record of the indicies found
 ```cpp
 int short_dist = 1e6;
 for (int i = 0; i < words.size(); i++) {
