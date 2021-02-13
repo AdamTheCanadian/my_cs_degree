@@ -27,6 +27,60 @@ for (int i = 0; i < words.size(); i++) {
 return short_dist;
 ```
 
+## Add two numbers (linked list)
+```cpp
+// Our list we will be adding elements to
+ListNode* ret_list = nullptr;
+// Our current pointer into the new list
+ListNode* curr_node = ret_list;
+
+// If our sum is >= 10 we need to carry over a one to the next sum
+int carry_one = 0;
+
+// Go through the list and start adding up the values.
+while (l1 != nullptr || l2 != nullptr) {
+    // Since the lists could be different sizes we need to check
+    // that they arent null, but if we set their values to 0 we
+    // can keep the logic the same (dont need end logic for checking 
+    // unequal list lengths)
+    int l1_val = 0;
+    int l2_val = 0;
+    if (l1 != nullptr) {
+        l1_val = l1->val;
+        l1 = l1->next;
+    }
+    if (l2 != nullptr) {
+        l2_val = l2->val;
+        l2 = l2->next;
+    }
+    int sum = l1_val + l2_val + carry_one;
+    // We used our carry_one so set it to 0
+    carry_one = 0;
+    if (sum >= 10) {
+        sum -= 10;
+        // We now have a leftover carry
+        carry_one = 1;
+    }
+    // Our very first element, so initialize our list
+    if (ret_list == nullptr) {
+        ret_list = new ListNode(sum);
+        curr_node = ret_list;
+    }
+    else {
+        // Create a new element
+        curr_node->next = new ListNode(sum);
+        curr_node = curr_node->next;
+    }
+}
+
+// We are done iterating and still left with a carry over so need to add 
+// the 1 as the last element.
+if (carry_one > 0) {
+    curr_node->next = new ListNode(carry_one);
+}
+return ret_list;
+```
+
 ## Longest substring
 - Find the longest substring in a string without any repeating characters
   - "abcabc"
